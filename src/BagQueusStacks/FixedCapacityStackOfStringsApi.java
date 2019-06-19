@@ -17,6 +17,10 @@ public class FixedCapacityStackOfStringsApi<Item> {
         return n;
     }
 
+    public boolean isFull() {
+        return n == a.length;
+    }
+
     private void resize(int max) {
         Item[] temp = (Item[]) new Object[max];
         for (int i = 0; i < n; i++) {

@@ -1,8 +1,6 @@
 package Fundementals;
 
-public class UnionFind {
-    private int[] id;
-    private int count;
+public class UnionFind extends AbstractUnionFind {
 
     public UnionFind(int n) {
         count = n;
@@ -10,6 +8,10 @@ public class UnionFind {
         for (int i = 0; i < n; i++) {
             id[i] = i;
         }
+    }
+
+    public int find(int p) {
+        return id[p];
     }
 
     public void union(int p, int q) {
@@ -26,17 +28,5 @@ public class UnionFind {
             }
         }
         count--;
-    }
-
-    public int find(int p) {
-        return id[p];
-    }
-
-    public boolean connected(int p, int q) {
-        return find(p) == find(q);
-    }
-
-    public int count() {
-        return count;
     }
 }

@@ -8,7 +8,8 @@ public class UnionFindClient {
     public static void main(String[] args) {
         int n = StdIn.readInt();
 //        UnionFind unionFind = new UnionFind(n);
-        QuickUnionfind unionFind = new QuickUnionfind(n);
+//        QuickUnionfind unionFind = new QuickUnionfind(n);
+        WeightedQuickUnionFind unionFind = new WeightedQuickUnionFind(n);
         while (!StdIn.isEmpty()) {
             int p = StdIn.readInt();
             int q = StdIn.readInt();

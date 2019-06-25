@@ -19,10 +19,10 @@
       <change afterPath="$PROJECT_DIR$/out/production/algorithms/Fundementals/UnionFind.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/algorithms/Fundementals/UnionFindClient.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Sorting/AbstractSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sorting/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sorting/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sorting/ShellSort.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Sorting/SortingClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/tiny.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/words3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/shellSort.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,17 +40,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sorting/SortingClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="7" column="30" selection-start-line="7" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Sorting/SelectionSort.java">
+        <entry file="file://$PROJECT_DIR$/src/Sorting/ShellSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="360">
+              <caret line="12" column="70" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -58,10 +58,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sorting/AbstractSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="86">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#143#144#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,11 +89,14 @@
         <option value="$PROJECT_DIR$/src/Fundementals/QuickUnionfind.java" />
         <option value="$PROJECT_DIR$/src/Fundementals/WeightedQuickUnionFind.java" />
         <option value="$PROJECT_DIR$/src/Fundementals/UnionFindClient.java" />
-        <option value="$PROJECT_DIR$/src/Sorting/SortingClient.java" />
         <option value="$PROJECT_DIR$/test_data/tiny.txt" />
         <option value="$PROJECT_DIR$/test_data/words3.txt" />
         <option value="$PROJECT_DIR$/src/Sorting/AbstractSort.java" />
         <option value="$PROJECT_DIR$/src/Sorting/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/Sorting/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/Sorting/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/Sorting/SortingClient.java" />
+        <option value="$PROJECT_DIR$/test_data/shellSort.txt" />
       </list>
     </option>
   </component>
@@ -107,6 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,6 +128,12 @@
               <item name="Documents" type="b2602c69:ProjectViewProjectNode" />
               <item name="Documents" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Fundementals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Documents" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Documents" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Sorting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -134,8 +145,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,7 +176,7 @@
       <option name="MAIN_CLASS_NAME" value="Sorting.SortingClient" />
       <module name="algorithms" />
       <option name="REDIRECT_INPUT" value="true" />
-      <option name="INPUT_FILE" value="$PROJECT_DIR$/test_data/tiny.txt" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/test_data/shellSort.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Sorting.*" />
@@ -235,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561116520962</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added AbstractSort class, client and Selection sort algorithm">
+      <created>1561375452380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561375452381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -267,14 +283,15 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="8" visible="true" weight="0.26307365" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="8" visible="true" weight="0.26627535" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added UnionFind algorithm and client" />
     <MESSAGE value="Added QuickUnionFind algorithm" />
     <MESSAGE value="Added WeightedQuickUnionFindAlgorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added WeightedQuickUnionFindAlgorithm" />
+    <MESSAGE value="Added AbstractSort class, client and Selection sort algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AbstractSort class, client and Selection sort algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -292,10 +309,16 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sorting/SortingClient.java</url>
-          <line>7</line>
+          <url>file://$PROJECT_DIR$/src/Sorting/InsertionSort.java</url>
+          <line>5</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Sorting/ShellSort.java</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -374,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fundementals/WeightedQuickUnionFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Fundementals/UnionFindClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -405,27 +421,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorting/SortingClient.java">
+    <entry file="file://$PROJECT_DIR$/src/Fundementals/WeightedQuickUnionFind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="7" column="30" selection-start-line="7" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorting/AbstractSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#143#144#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sorting/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorting/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorting/SortingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/shellSort.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorting/AbstractSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#190#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorting/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="70" />
         </state>
       </provider>
     </entry>

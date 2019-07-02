@@ -7,7 +7,9 @@ public class SortingClient {
         String[] a = StdIn.readAllStrings();
 //        new SelectionSort().sort(a);
 //        new InsertionSort().sort(a);
-        new ShellSort().sort(a);
+//        new ShellSort().sort(a);
+//        new TopDownMergeSort().sort(a);
+        new BottomUpMergeSort().sort(a);
         assert AbstractSort.isSorted(a);
         AbstractSort.show(a);
     }

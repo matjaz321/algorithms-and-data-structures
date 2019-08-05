@@ -1,8 +1,8 @@
 package Sorting;
 
 public class ShellSort extends AbstractSort {
-    @Override
-    public void sort(Comparable[] a) {
+
+    public static void sort(Comparable[] a) {
         int n = a.length;
         int h = 1;
         while (h < n / 3) {

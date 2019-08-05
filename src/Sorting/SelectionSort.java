@@ -1,8 +1,7 @@
 package Sorting;
 
 public class SelectionSort extends AbstractSort {
-    @Override
-    public void sort(Comparable[] a) {
+    public static void sort(Comparable[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
             int min = i;

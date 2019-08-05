@@ -29,6 +29,4 @@ abstract class AbstractSort {
 
         return true;
     }
-
-    public abstract void sort(Comparable[] a);
 }

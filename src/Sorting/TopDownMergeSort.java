@@ -3,8 +3,7 @@ package Sorting;
 public class TopDownMergeSort extends AbstractSort {
     private static Comparable[] aux;
 
-    @Override
-    public void sort(Comparable[] a) {
+    public static void sort(Comparable[] a) {
         aux = new Comparable[a.length];
         sort(a, 0, a.length - 1);
     }

@@ -9,8 +9,9 @@ public class SortingClient {
 //        new InsertionSort().sort(a);
 //        new ShellSort().sort(a);
 //        new TopDownMergeSort().sort(a);
-        new BottomUpMergeSort().sort(a);
-        assert AbstractSort.isSorted(a);
+//        new BottomUpMergeSort().sort(a);
+//        assert AbstractSort.isSorted(a);
+        new QuickSort().sort(a);
         AbstractSort.show(a);
     }
 }
